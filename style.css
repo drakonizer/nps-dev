@@ -1,0 +1,8 @@
+
+html{
+	font-family: Consolas;
+}
+
+ul#candidates li {
+	display: inline;
+}
