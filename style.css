@@ -1,8 +1,10 @@
 
-html{
-	font-family: Consolas;
+div#bread {
+	margin-top: 50px;
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
-ul#candidates li {
-	display: inline;
+div#logo a{
+	margin-left: 10px;
 }
