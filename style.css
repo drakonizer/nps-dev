@@ -1,10 +1,20 @@
 
 div#bread {
-	margin-top: 50px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-top: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 div#logo a{
 	margin-left: 10px;
+}
+
+div#childu {
+	display: inline-block;
+	margin-top: 150px;
+	margin-left: 10px;
+}
+div#rusk 
+{
+	text-align: center;
 }
