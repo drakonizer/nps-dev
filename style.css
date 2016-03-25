@@ -27,3 +27,14 @@ div#parentu
 	display:flex;
   justify-content:space-between;
 }
+
+div#passform
+{
+   position: relative;
+   position: absolute;               
+   top: 50%;                         
+   /* transform: translate(0, -50%); */
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+}
