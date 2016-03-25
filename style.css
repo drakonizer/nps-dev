@@ -13,8 +13,7 @@ div#childu
 {
 	display: inline-block;
 	margin-top: 150px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: auto;
 }
 
 div#rusk
@@ -25,7 +24,8 @@ div#rusk
 div#parentu
 {
 	display:flex;
-  justify-content:space-between;
+	justify-content:space-between;
+
 }
 
 div#passform
