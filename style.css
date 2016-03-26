@@ -5,36 +5,36 @@ div#bread {
 	margin-right: 0px;
 }
 
-div#logo a{
+div#logo a {
 	margin-left: 10px;
 }
 
-div#childu
-{
+div#childu {
 	display: inline-block;
 	margin-top: 150px;
 	margin-left: auto;
 }
 
-div#rusk
-{
+div#rusk {
 	text-align: center;
 }
 
-div#parentu
-{
+div#parentu {
 	display:flex;
 	justify-content:space-between;
 
 }
 
-div#passform
-{
+div#passform {
    position: relative;
-   position: absolute;               
-   top: 50%;                         
+   position: absolute;
+   top: 50%;
    /* transform: translate(0, -50%); */
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%, -50%);
+}
+
+footer#myfoot {
+	margin-top: 30px;
 }
