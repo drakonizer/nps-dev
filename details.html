@@ -51,7 +51,7 @@
 		<div id="passform" style="margin-top: 50px;">
 			<!-- first name -->
 			<form action="#">
-			  <div class="mdl-textfield mdl-js-textfield">
+			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 				<input class="mdl-textfield__input" type="text" id="sample1">
 				<label class="mdl-textfield__label" for="sample1">Candidate's first name</label>
 			  </div>
@@ -59,7 +59,7 @@
 			
 			<!-- last name -->
 			<form action="#">
-			  <div class="mdl-textfield mdl-js-textfield">
+			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 				<input class="mdl-textfield__input" type="text" id="sample1">
 				<label class="mdl-textfield__label" for="sample1">Candidate's last name</label>
 			  </div>
@@ -72,20 +72,28 @@
 				<label class="mdl-textfield__label" for="sample3">Tagline</label>
 			  </div>
 			</form> 
+			
+			<!-- description -->
+			<form action="#">
+			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+				<label class="mdl-textfield__label" for="sample5">Description</label>
+			  </div>
+			</form>
+			
+			<!--dp -->
+		  <form action="#">
+			<div class="file-field input-field" style="width: 150%;">
+			  <div class="btn">
+				<span>Upload Image</span>
+				<input type="file">
+			  </div>
+			  <div class="file-path-wrapper">
+				<input class="file-path validate" type="text" placeholder="Upload profile picture of candidate">
+			  </div>
+			</div>
+		  </form>
 		</div>
-		
-		<!-- upload image of candidate -->
-		<form action="#">
-		<div class="file-field input-field" id="shaata">
-		  <div class="btn">
-			<span>File</span>
-			<input type="file">
-		  </div>
-		  <div class="file-path-wrapper">
-			<input class="file-path validate" type="text">
-		  </div>
-		</div>
-	  </form>
         
 	</body>
 </html>
