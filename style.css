@@ -29,12 +29,26 @@ div#rusk
 	text-align: center;
 }
 
-div#parentu
+div#parentu    
 {
 	display:flex;
 	justify-content:space-between;
 
 }
+
+/*for index.html due to clash with home.html*/
+
+div#parentu_main {
+    display: flex;
+    justify-content: spaced-between;
+}
+
+div#childu_main {
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 150px; 
+} 
+
 
 div#passform
 {
