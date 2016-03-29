@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="css/material.min.js"></script>
-	<!--link rel="stylesheet" href="css/material.min.css"-->
-	<!--script src="css/material.js"></script-->
+	<link rel="stylesheet" href="css/material.min.css">
+	<script src="css/material.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 	<title>Voting System</title>
@@ -30,7 +30,7 @@
 			<header class="mdl-layout__header mdl-layout__header--transparent" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
+					<span href="home.html" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
@@ -39,7 +39,7 @@
 						<a class="mdl-navigation__link" href="pass-page.html">Student Vote</a>
 						<a class="mdl-navigation__link" href="pass-page.html">Teacher Vote</a>
 						<a class="mdl-navigation__link" href="pass-page.html">Add Details</a>
-						<a class="mdl-navigation__link" href="pass-page.html">View Results!</a>
+						<a class="mdl-navigation__link" href="pass-page.html">View Results</a>
 					</nav>
 				</div>
 			</header>
@@ -66,47 +66,48 @@
 		}
 		</style>
 
-	    <!-- cards for the candidates -->
+	   
 		<body>
-		<div id="parentu">
-		<div id="childu" style="float: left;">
+		<table id="choice_cards">
+		<tr><div id="parentu">
+		<td><div id="childu">
 		<div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('c1.jpg') center / cover;">
 		  <div class="mdl-card__title mdl-card--expand"></div>
 		  <div class="mdl-card__actions">
 			<span class="demo-card-image__filename">Teacher Vote</span>
 		  </div>
+		</div></td>
 		</div>
-		</div>
-		<!-- end of card -->
-		<div id="childu" style="float: right; margin-right: auto;">
+		
+		<td><div id="childu">
 		<div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('c2.jpg') center / cover;">
 		  <div class="mdl-card__title mdl-card--expand"></div>
 		  <div class="mdl-card__actions">
 			<span class="demo-card-image__filename">Enter Details</span>
 		  </div>
-		</div>	
-		<!-- end of second card-->
+		</div></td>
+		</div></tr>
 		</div>
-		</div>
-		<div id="parentu">
-		<div id="botchildu" style="float: left;">
+		
+		<tr><div id="parentu">
+		<td><div id="botchildu">
 		<div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('c3.jpg') center / cover;">
 		  <div class="mdl-card__title mdl-card--expand"></div>
 		  <div class="mdl-card__actions">
 			<span class="demo-card-image__filename">Student Vote</span>
 		  </div>
 		</div>
-		</div>
-		<!-- end of card -->
-		<div id="botchildu" style="float: right; margin-right: auto;">
+		</div></td>
+		
+		<td><div id="botchildu">
 		<div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('c4.jpg') center / cover;">
 		  <div class="mdl-card__title mdl-card--expand"></div>
 		  <div class="mdl-card__actions">
 			<span class="demo-card-image__filename">View Results!</span>
 		  </div>
 		</div>	
-		<!-- end of second card-->
-		</div>
-		</div>
+		
+		</div></td>
+		</div></tr>
 	</body>
 </html>
