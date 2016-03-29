@@ -12,15 +12,14 @@ div#childu
 {
 	display: inline-block;
 	margin-top: 200px;
-	margin-left: 150px;
-	margin-right: 200px;
+	margin-left: auto;
+	width: auto;
 }
 
 div#botchildu
 {
 	display: inline-block;
-	margin-left: 150px;
-	margin-right: 200px;
+	margin-left: auto;
 	margin-top: 25px;
 }
 
@@ -32,15 +31,24 @@ div#rusk
 div#parentu    
 {
 	display:flex;
-	justify-content:space-between;
+	justify-content: space-between;
 
+}
+
+div#select
+{
+	height: 300px;
+	width: 40%;
+	margin-left: auto;
+	display: inline-block;
+	position:relative;
 }
 
 /*for index.html due to clash with home.html*/
 
 div#parentu_main {
     display: flex;
-    justify-content: spaced-between;
+    justify-content: space-between;
 }
 
 div#childu_main {
@@ -59,12 +67,6 @@ div#passform
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%, -50%);
-}
-
-table#choice_cards {
-	width: 55%;
-	margin-left: 30px; 
-	clear: both;
 }
 
 /* Materialize components for DP input */
