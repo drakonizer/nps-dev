@@ -46,12 +46,28 @@
 				<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background: transparent">
 					<a href="#fixed-tab-1" class="mdl-layout__tab is-active">Deputy-Head</a>
 					<a href="#fixed-tab-2" class="mdl-layout__tab">Head</a>
-					<a href="#fixed-tab-3" class="mdl-layout__tab">Confirmation</a>
+					<a href="#fixed-tab-3" class="mdl-layout__tab" onclick="show('confirm_candy'); hide('childu_main');">Confirmation</a>
+					
+					<!-- script for confirmation toggle -->
+					<script>
+							function show(toBlock){
+								setDisplay(toBlock, 'block');
+							}
+							
+							function hide(toNone) {
+								setDisplay(toNone, 'none');
+							}
+							
+							function setDisplay(target, str) {
+								document.getElementById(target).style.display = str;
+							}
+					</script>
 				</div>
 			</header>
 			<main class="mdl-layout__content">
 			</main>
 			</div>
+	</head>
 	    <!-- Wide card with share menu button -->
 		<style>
 		.demo-card-square.mdl-card {
@@ -136,5 +152,21 @@
 		</div>
 		<!-- end of cards -->
 	</div>
+	
+	<!-- confirmation cards -->
+	<p>
+		<div id="confirm_candy" style="margin-right: auto;">
+			<div class="demo-card-square mdl-card mdl-shadow--2dp" >
+			  <div class="mdl-card__title mdl-card--expand">
+				<h2 class="mdl-card__title-text">Nagaraju Lighthousu</h2>
+			  </div>
+			  <div class="mdl-card__supporting-text">
+				I yam Mishtar Lighthousu. I am a stonding far ye yilection. Dayavittu flease vote far tha Lighthousu. I can give you a bulbu.
+			  </div>
+			  <div class="mdl-card__actions mdl-card--border">
+			  </div>
+			</div>
+		</div>
+	</p>
 	</body>
 </html>
