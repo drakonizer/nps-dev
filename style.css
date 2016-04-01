@@ -53,6 +53,11 @@ div#parentu_main {
     justify-content: space-between;
 }
 
+div#parentu_head {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 div#childu_main {
     display: inline-block;
