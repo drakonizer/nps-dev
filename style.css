@@ -46,6 +46,16 @@ div#select
 	position:relative;
 }
 
+body{
+   height:100%;
+   width:100%;
+   background-image:url(bg.png);  
+   background-repeat:no-repeat; 
+   background-size:cover;
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+}
+
 /*for index.html due to clash with home.html*/
 
 div#parentu_main {
@@ -58,6 +68,19 @@ div#parentu_head {
     justify-content: space-between;
 }
 
+div#testt {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dbtn
+{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
 
 div#childu_main {
     display: inline-block;
