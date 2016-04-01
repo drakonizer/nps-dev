@@ -30,7 +30,7 @@
 			<header class="mdl-layout__header mdl-layout__header--transparent" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span href="home.html" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
+					<span onclick="location.href='home.html'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
@@ -51,8 +51,8 @@
 					</script>	
 				<!-- Tabs -->
 				<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background: transparent">
-					<a href="#fixed-tab-1" class="mdl-layout__tab is-active">Deputy-Head</a>
-					<a href="#fixed-tab-2" class="mdl-layout__tab">Head</a>
+					<a href="#fixed-tab-1" class="mdl-layout__tab is-active" onclick="conf('parentu_main', 'confirm_candy');">Deputy-Head</a>
+					<a href="#fixed-tab-2" class="mdl-layout__tab" onclick="conf('parentu_main', 'confirm_candy');">Head</a>
 					<a href="#fixed-tab-3" class="mdl-layout__tab" onclick="conf('confirm_candy', 'parentu_main');">Confirmation</a>
 					
 				</div>
