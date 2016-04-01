@@ -67,6 +67,13 @@
 							{
 								$(".mdl-layout__tab:eq(2) span").click ();
 							}
+							function showSnax()
+							{
+								'use strict';
+								  var snackbarContainer = document.querySelector('#snackbarz');
+									var data = {message: 'Your vote has been successfully cast!'};
+									snackbarContainer.MaterialSnackbar.showSnackbar(data);
+							}
 					</script>	
 				<!-- Tabs -->
 				<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background: transparent">
@@ -269,10 +276,14 @@
 			  </div>
 			</div>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="showSnax();">
 		  <i class="material-icons">done_all</i>
 		</button>
 		</div>
-		</div>
+	</div>
 	</body>
+		<div id="snackbarz" class="mdl-js-snackbar mdl-snackbar">
+		  <div class="mdl-snackbar__text"></div>
+		  <button class="mdl-snackbar__action" type="button"></button>
+		</div>
 </html>
