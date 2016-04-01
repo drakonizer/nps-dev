@@ -6,6 +6,7 @@ $qerr="query failed";
 session_start();
 
 $SESSION['class']="teacher";
+$SESSION['loggedinornotunoob']=0;
 
 mysqli_connect("","","","");
 
@@ -25,16 +26,20 @@ if($row)
 	{
 	case 0:
 		{
-			header("vote.html");
+			$SESSION['loggedinornotunoob']=1;
+			header("thepotatoman.php");	
 		}
-	case 1:
+		
+	case 4:
 		{
-			header("add.html");	
+			fun.getfun();
 		}
+
 	default:
 		{
-			echo $qerr;
+			session_destroy();
+			header("check.php");
 		}
-	}
+	 
 }
 ?>
