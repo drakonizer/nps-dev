@@ -4,8 +4,8 @@ $err="mysqli connect error";
 $qerr="query failed";
 
 session_start();
-$SESSION['class']="";
-$SESSION['loggedinornotunoob']=0;
+$_SESSION['class']="";
+$_SESSION['loggedinornotunoob']=0;
 mysqli_connect("","","","");
 
 if(mysqli_connect_error())
@@ -13,20 +13,20 @@ if(mysqli_connect_error())
 	echo $err;
 }
 
-$id=$POST['uniqueid'];
+$id=$_POST['uniqueid'];
 $row=mysqli_num_rows("WHERE uniqueid==$id");
 
 if($row)
 {
 	$head=mysqli_fetch_field("num WHERE uniqueid==$id");
 	
-	$SESSION['class']=mysqli_fetch_field("$SESSION['class'] WHERE uniqueid==$id");
+	$_SESSION['class']=mysqli_fetch_field("$_SESSION['class'] WHERE uniqueid==$id");
 	if()
 	switch($head)
 	{
 	case 0:
 		{
-			$SESSION['loggedinornotunoob']=1;
+			$_SESSION['loggedinornotunoob']=1;
 			header("thepotatoman.php");	
 		}
 	

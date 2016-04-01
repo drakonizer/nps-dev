@@ -5,8 +5,8 @@ $qerr="query failed";
 
 session_start();
 
-$SESSION['class']="teacher";
-$SESSION['loggedinornotunoob']=0;
+$_SESSION['class']="teacher";
+$_SESSION['loggedinornotunoob']=0;
 
 mysqli_connect("","","","");
 
@@ -15,7 +15,7 @@ if(mysqli_connect_error())
 	echo $err;
 }
 
-$id=$POST['uniqueid'];
+$id=$_POST['uniqueid'];
 $row=mysqli_num_rows("WHERE uniqueid==$id");
 
 if($row)
@@ -26,7 +26,7 @@ if($row)
 	{
 	case 0:
 		{
-			$SESSION['loggedinornotunoob']=2;
+			$_SESSION['loggedinornotunoob']=2;
 			header("thepotatoman.php");	
 		}
 		
