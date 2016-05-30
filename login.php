@@ -36,8 +36,24 @@ $row = mysqli_fetch_assoc($sel_user);
 $_SESSION['class']=$row['class'];
 $_SESSION['loggedin']=1;
 
-header("Location: vote.php");
+if($page==1)
 
+{header("Location: vote.php");}
+else if($page==2)
+{
+header("Location: details.php");
+
+}
+
+else if($page==3)
+
+{
+header("Location: vote.php");
+}
+
+else if($page==4)
+{
+header("Location: viewdetails.php");
 }
 
 else 
