@@ -1,5 +1,5 @@
+<?php include 'thepotatoman.php'; ?>
 <!DOCTYPE html>
-
 <html>
 	<!-- some imports-->
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
@@ -32,10 +32,10 @@
 					<div class="mdl-layout-spacer"></div>
 					<!-- Navigation -->
 					<nav class="mdl-navigation">
-						<a class="mdl-navigation__link" href="">Student Vote</a>
-						<a class="mdl-navigation__link" href="">Teacher Vote</a>
-						<a class="mdl-navigation__link" href="">Add Details</a>
-						<a class="mdl-navigation__link" href="">View Results!</a>
+						<a class="mdl-navigation__link" href="pass-page.html">Student Vote</a>
+						<a class="mdl-navigation__link" href="pass-paget.html">Teacher Vote</a>
+						<a class="mdl-navigation__link" href="pass-pagea.html">Add Details</a>
+						<a class="mdl-navigation__link" href="pass-pagev.html">View Results</a>
 					</nav>
 				</div>
 			</header>
@@ -48,32 +48,24 @@
 			<!-- first name -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<input class="mdl-textfield__input" type="text" id="sample1">
-				<label class="mdl-textfield__label" for="sample1">Candidate's first name</label>
-			  </div>
-			</form>
-			
-			<!-- last name -->
-			<form action="#">
-			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<input class="mdl-textfield__input" type="text" id="sample1">
-				<label class="mdl-textfield__label" for="sample1">Candidate's last name</label>
+				<input class="mdl-textfield__input" type="text" id="name">
+				<label class="mdl-textfield__label" for="name">Candidate's name</label>
 			  </div>
 			</form>
 			
 			<!-- tag-line -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<input class="mdl-textfield__input" type="text" id="sample3">
-				<label class="mdl-textfield__label" for="sample3">Tagline</label>
+				<input class="mdl-textfield__input" type="text" id="tagline">
+				<label class="mdl-textfield__label" for="tagline">Tagline</label>
 			  </div>
 			</form> 
 			
 			<!-- description -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
-				<label class="mdl-textfield__label" for="sample5">Description</label>
+				<textarea class="mdl-textfield__input" type="text" rows= "3" id="details" ></textarea>
+				<label class="mdl-textfield__label" for="details">Description</label>
 			  </div>
 			</form>
 			
@@ -83,7 +75,7 @@
 				  <img style="width: 30px; height: 30px;" src="icons/upload.png" id="upl"></img>Upload Image
 				</label>
 				<input type="file" id="file" style="display: none;">
-				<button class="mdl-button mdl-shadow--8dp mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin-left: 20px">
+				<button class="mdl-button mdl-shadow--8dp mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="submit" style="margin-left: 20px">
 				  <img style="width: 30px; height: 30px;" src="icons/assignment.png" id="upl"></i>Done
 				</button>
 			</form>

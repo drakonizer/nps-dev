@@ -5,15 +5,15 @@ if(isset($_POST['submit']))
 {
 	if(empty($_POST['name'])) 
 	{
-		header("Location: add.php");
+		header("Location: details.html");
 	}
 	else if(empty($_POST['class'])) 
 	{
-		header("Location: add.php");
+		header("Location: details.html");
 	}
 	else if(empty($_POST['details'])) 
 	{
-		header("Location: add.php");
+		header("Location: details.html");
 	}
 
 	else
@@ -62,8 +62,8 @@ if ($uploadOk == 0) {
 }
 
 		
-		$name=$_POST['submit'];
-		$class=$_POST['class'];
+		$name=$_POST['name'];
+		$class=$_POST['tagline'];
 		$details=$_POST['details'];
 		
 		$con = mysqli_connect("","","","mdb");
