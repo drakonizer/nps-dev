@@ -1,6 +1,5 @@
 <?php
-$con = mysqli_connect("","","","mdb");
-$con1 = mysqli_connect("","","","Dhead");
+$con=mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
 
 if (mysqli_connect_errno())
 
@@ -10,7 +9,7 @@ echo "Database could not be found.". mysqli_connect_error();
 
 }
 
-$sel_user = "select * from Dhead where class='$_SESSION['class']'";
+$sel_user = "select * from dhead where class='$_SESSION['class']'";
 
 $run_user = mysqli_query($con, $sel_user);
 

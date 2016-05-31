@@ -24,11 +24,13 @@ if($check_user>0)
 	$_SESSION['dhead']=$row['name'];
 	$_SESSION['dnum']=$row['sno'];
 	$_SESSION['dvotes']=$row['oats'];
+	$_SESSION['ddetails']=$row['details'];
+	$_SESSION['dpic']="picture/"+$row['sno'];
 }
 
-if(isset($_POST['optionsh'])
+if(isset('optionsh')
 {
-	$dh=$_POST['optionsdh'];
+	$dh='optionsdh';
 	$con = mysqli_connect("","","","");
 
 if (mysqli_connect_errno())
@@ -49,5 +51,10 @@ if($check_user>0)
 	$_SESSION['head']=$row['name'];
 	$_SESSION['hnum']=$row['sno'];
 	$_SESSION['votes']=$row['oats'];
+	$_SESSION['hdetails']=$row['details'];
+	$_SESSION['hpic']="picture/"+$row['sno']
 }
+
+
+
 ?>

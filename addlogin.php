@@ -11,7 +11,7 @@ $error = "Uniqueid for class is not entered noob";
 }
 
 {
-	$con = mysqli_connect("","","","TDB");
+	$con=mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
 
 if (mysqli_connect_errno())
 
