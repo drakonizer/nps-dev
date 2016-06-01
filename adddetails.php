@@ -5,15 +5,15 @@ if(isset($_POST['submit']))
 {
 	if(empty($_POST['name'])) 
 	{
-		header("Location: details.html");
+		header("Location: details.php");
 	}
 	else if(empty($_POST['class'])) 
 	{
-		header("Location: details.html");
+		header("Location: details.php");
 	}
 	else if(empty($_POST['details'])) 
 	{
-		header("Location: details.html");
+		header("Location: details.php");
 	}
 
 	else

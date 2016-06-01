@@ -29,16 +29,16 @@
 			<header class="mdl-layout__header mdl-layout__header--transparent mdl-shadow--16dp" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span onclick="location.href='home.html'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
+					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
 					<!-- Navigation -->
 					<nav class="mdl-navigation">
-						<a class="mdl-navigation__link" href="pass-page.html">Student Vote</a>
-						<a class="mdl-navigation__link" href="pass-paget.html">Teacher Vote</a>
-						<a class="mdl-navigation__link" href="pass-pagea.html">Add Details</a>
-						<a class="mdl-navigation__link" href="pass-pagev.html">View Results</a>
+						<a class="mdl-navigation__link" href="pass-page.php">Student Vote</a>
+						<a class="mdl-navigation__link" href="pass-paget.php">Teacher Vote</a>
+						<a class="mdl-navigation__link" href="pass-pagea.php">Add Details</a>
+						<a class="mdl-navigation__link" href="pass-pagev.php">View Results</a>
 					</nav>
 				</div>
 			</header>

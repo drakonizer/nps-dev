@@ -27,16 +27,16 @@
 			<header class="mdl-layout__header mdl-layout__header--transparent mdl-shadow--16dp" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span onclick="location.href='home.html'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
+					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
 					<!-- Navigation -->
 					<nav class="mdl-navigation">
-						<a class="mdl-navigation__link" href="pass-page.html">Student Vote</a>
-						<a class="mdl-navigation__link" href="pass-paget.html">Teacher Vote</a>
-						<a class="mdl-navigation__link" href="pass-pagea.html">Add Details</a>
-						<a class="mdl-navigation__link" href="pass-pagev.html">View Results!</a>
+						<a class="mdl-navigation__link" href="pass-page.php">Student Vote</a>
+						<a class="mdl-navigation__link" href="pass-paget.php">Teacher Vote</a>
+						<a class="mdl-navigation__link" href="pass-pagea.php">Add Details</a>
+						<a class="mdl-navigation__link" href="pass-pagev.php">View Results!</a>
 					</nav>
 				</div>
 					<!-- script for confirmation toggle -->
@@ -84,7 +84,6 @@
 			</main>
 			</div>
 	</head>
-	    <!-- Wide card with share menu button -->
 		<style>
 		.demo-card-square.mdl-card {
 		  width: 320px;
@@ -92,8 +91,6 @@
 		}
 		.demo-card-square > .mdl-card__title {
 		  color: #fff;
-		  background:
-			url('Lighthouse.jpg')center / cover;
 		}
 		</style>
 	    <!-- cards for the candidates -->
@@ -101,7 +98,7 @@
 		<div id="parentu_main" style="display: flex; justify-content: space-between;">
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('1.jpg')center / cover;">
+			url('picture/1.jpg')center / cover;">
 			  <div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text"><?php echo $h[0];?></h2>
 			  </div>
@@ -119,7 +116,7 @@
 		<!-- end of card -->
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('2.jpg')center / cover;">
+			url('picture/2.jpg')center / cover;">
 			  <div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text"><?php echo $h[1];?></h2>
 			  </div>
@@ -137,7 +134,7 @@
 		<!-- end of second card-->
 		<div id="childu_main" style="margin-right: auto;">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('3.jpg')center / cover;">
+			url('picture/3.jpg')center / cover;">
 			  <div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text"><?php echo $h[2];?></h2>
 			  </div>
@@ -166,7 +163,7 @@
 		<div id="parentu_head" style="display: none; justify-content: space-between;">
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('4.jpg')center / cover;">
+			url('picture/4.jpg')center / cover;">
 			  <div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text"><?php echo $h[3];?></h2>
 			  </div>
@@ -184,7 +181,7 @@
 		<!-- end of card -->
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('5.jpg')center / cover;">
+			url('picture/5.jpg')center / cover;">
 			  <div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text"><?php echo $h[4];?></h2>
 			  </div>
@@ -202,7 +199,7 @@
 		<!-- end of second card-->
 		<div id="childu_main" style="margin-right: auto;">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('6.jpg')center / cover;">
+			url('picture/6.jpg')center / cover;">
 			  <div class="mdl-card__title mdl-card--expand">
 				<h2 class="mdl-card__title-text"><?php echo $h[5];?></h2>
 			  </div>

@@ -23,7 +23,7 @@ echo "Database could not be found.". mysqli_connect_error();
 
 $id = mysqli_real_escape_string($con,$_POST['uniqueid']);
 
-$sel_user = "select * from Dhead where addpassword='$id'";
+$sel_user = "select * from dhead where addpassword='$id'";
 
 $run_user = mysqli_query($con, $sel_user);
 
