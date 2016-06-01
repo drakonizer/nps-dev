@@ -9,9 +9,10 @@ if (empty($_POST['password']))
 {
 $error = "Password is not entered noob";
 }
-
+else
 {
 	$con=mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
+}
 
 if (mysqli_connect_errno())
 
@@ -19,6 +20,7 @@ if (mysqli_connect_errno())
 {
 
 echo "Database could not be found.". mysqli_connect_error();
+}
 }
 
 
@@ -36,6 +38,7 @@ $row = mysqli_fetch_assoc($sel_user);
 
 $_SESSION['class']=$row['class'];
 $_SESSION['loggedin']=1;
+}
 
 if($page==1)
 
@@ -43,11 +46,9 @@ if($page==1)
 else if($page==2)
 {
 header("Location: details.php");
-
 }
 
 else if($page==3)
-
 {
 header("Location: vote.php");
 }
