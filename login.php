@@ -38,7 +38,9 @@ $_SESSION['loggedin']=1;
 
 if($page==1)
 
-{header("Location: vote.php");}
+{
+header("Location: vote.php");
+}
 else if($page==2)
 {
 header("Location: details.php");
