@@ -25,16 +25,16 @@
 			<header class="mdl-layout__header mdl-layout__header--transparent mdl-shadow--16dp" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span onclick="location.href='home.html'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
+					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
 					<!-- Navigation -->
 					<nav class="mdl-navigation">
-						<a class="mdl-navigation__link" href="pass-page.html">Student Vote</a>
-						<a class="mdl-navigation__link" href="pass-paget.html">Teacher Vote</a>
-						<a class="mdl-navigation__link" href="pass-pagea.html">Add Details</a>
-						<a class="mdl-navigation__link" href="pass-pagev.html">View Results</a>
+						<a class="mdl-navigation__link" href="pass-page.php">Student Vote</a>
+						<a class="mdl-navigation__link" href="pass-paget.php">Teacher Vote</a>
+						<a class="mdl-navigation__link" href="pass-pagea.php">Add Details</a>
+						<a class="mdl-navigation__link" href="pass-pagev.php">View Results</a>
 					</nav>
 				</div>
 			</header>
@@ -64,18 +64,18 @@
 	   
 		<body>
 		<div id="parentu" style="padding-top: 150px;">
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.html'" style="background: url('c1.jpg') center / contain; background-repeat:no-repeat;" id="select">
-		  <div href="pass-page.html" class="mdl-card__title mdl-card--expand mdl-ripple"></div>
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c1.jpg') center / contain; background-repeat:no-repeat;" id="select">
+		  <div href="pass-page.php" class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.html'" style="background: url('c2.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c2.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
 		</div>
 		<div id="parentu" style="padding-top: 20px; margin-bottom: 50px">		
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.html'" style="background: url('c3.jpg') center / contain; background-repeat:no-repeat;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c3.jpg') center / contain; background-repeat:no-repeat;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.html'" style="background: url('c4.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c4.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>	
 		</div>
