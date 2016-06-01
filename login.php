@@ -7,21 +7,17 @@ if (isset($_POST['submit']))
 {
 if (empty($_POST['password'])) 
 {
-$error = "Password is not entered noob";
+$error = "Password is not entered";
 }
-else
-{
-	$con=mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
 }
+$con=mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
 
 if (mysqli_connect_errno())
-
-
 {
 
 echo "Database could not be found.". mysqli_connect_error();
 }
-}
+
 
 
 $id = mysqli_real_escape_string($con,$_POST['uniqueid']);

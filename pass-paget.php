@@ -1,6 +1,7 @@
-<?php include 'login.php'; 
-	$page=3;
-?>
+<?php 
+$page=3;
+include 'login.php';
+ ?>
 	
 <!DOCTYPE html>
 

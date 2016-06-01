@@ -1,5 +1,6 @@
-<?php include 'login.php';
+<?php 
 $page=1;
+include 'login.php';
  ?>
 <!DOCTYPE html>
 
