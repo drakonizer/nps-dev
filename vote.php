@@ -4,7 +4,7 @@ session_start();
 if(isset($_POST['optionsdh'])
 {
 	$dh=$_POST['optionsdh'];
-	$con = mysqli_connect("","","","mdb");
+	$con = mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
 
 if (mysqli_connect_errno())
 
@@ -31,7 +31,7 @@ if($check_user>0)
 if(isset('optionsh')
 {
 	$dh='optionsdh';
-	$con = mysqli_connect("","","","");
+	$con = mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
 
 if (mysqli_connect_errno())
 

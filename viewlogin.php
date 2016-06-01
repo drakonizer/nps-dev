@@ -11,7 +11,7 @@ $error = "Password is not entered noob";
 }
 
 {
-	$con = mysqli_connect("","","","");
+	$con = mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
 
 if (mysqli_connect_errno())
 
@@ -23,7 +23,7 @@ echo "Database could not be found.". mysqli_connect_error();
 
 $id = mysqli_real_escape_string($con,$_POST['uniqueid']);
 
-$sel_user = "select * from Dhead where viewpassword='$id'";
+$sel_user = "select * from dhead where viewpassword='$id'";
 
 $run_user = mysqli_query($con, $sel_user);
 

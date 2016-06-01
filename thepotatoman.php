@@ -22,7 +22,7 @@ else
 	echo "Dont try anything sneaky noob";
 	
 	session_destroy();
-	secret();
+	//secret();
 }
 
 
