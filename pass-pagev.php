@@ -52,7 +52,7 @@ include 'login.php';
 			</div>
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="passform" style="margin-top: 90px;">
-				<input class="mdl-textfield__input" type="password" id="password" style="width: 300px;">
+				<input class="mdl-textfield__input" type="password" id="uniqueid" style="width: 300px;">
 				<label class="mdl-textfield__label" for="password">Enter your password...</label>
 			  </div>
 			</form>
