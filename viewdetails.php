@@ -71,38 +71,117 @@
 					<td>Total</td>
 				</tr>
 				<tr>
-					<td>Name</td>
-					<td>8A</td>
-					<td>8B</td>
-					<td>8C</td>
-					<td>9A</td>
-					<td>9B</td>
-					<td>9C</td>
-					<td>10A</td>
-					<td>10B</td>
-					<td>10C</td>
-					<td>11A</td>
-					<td>11B</td>
-					<td>11C</td>
-					<td>12A</td>
-					<td>12B</td>
-					<td>Teachers</td>
-					<td>Total</td>
+					<td><?php echo $h[0]; ?></td>
+					<td><?php echo $v[0]; ?></td>
+					<td><?php echo $v[1]; ?></td>
+					<td><?php echo $v[2]; ?></td>
+					<td><?php echo $v[3]; ?></td>
+					<td><?php echo $v[4]; ?></td>
+					<td><?php echo $v[5]; ?></td>
+					<td><?php echo $v[6]; ?></td>
+					<td><?php echo $v[7]; ?></td>
+					<td><?php echo $v[8]; ?></td>
+					<td><?php echo $v[9]; ?></td>
+					<td><?php echo $v[10]; ?></td>
+					<td><?php echo $v[11]; ?></td>
+					<td><?php echo $v[12]; ?></td>
+					<td><?php echo $v[13]; ?></td>
+					<td><?php echo $v[14]; ?></td>
+					<td><?php echo $v[15]; ?></td>
+				<tr>
+					<td><?php echo $h[1]; ?></td>
+					<td><?php echo $v[0]; ?></td>
+					<td><?php echo $v[1]; ?></td>
+					<td><?php echo $v[2]; ?></td>
+					<td><?php echo $v[3]; ?></td>
+					<td><?php echo $v[4]; ?></td>
+					<td><?php echo $v[5]; ?></td>
+					<td><?php echo $v[6]; ?></td>
+					<td><?php echo $v[7]; ?></td>
+					<td><?php echo $v[8]; ?></td>
+					<td><?php echo $v[9]; ?></td>
+					<td><?php echo $v[10]; ?></td>
+					<td><?php echo $v[11]; ?></td>
+					<td><?php echo $v[12]; ?></td>
+					<td><?php echo $v[13]; ?></td>
+					<td><?php echo $v[14]; ?></td>
+					<td><?php echo $v[15]; ?></td>
 				</tr>
 				<tr>
-					<td>Dota 2</td>
+					<td><?php echo $h[2]; ?></td>
+					<td><?php echo $v[0]; ?></td>
+					<td><?php echo $v[1]; ?></td>
+					<td><?php echo $v[2]; ?></td>
+					<td><?php echo $v[3]; ?></td>
+					<td><?php echo $v[4]; ?></td>
+					<td><?php echo $v[5]; ?></td>
+					<td><?php echo $v[6]; ?></td>
+					<td><?php echo $v[7]; ?></td>
+					<td><?php echo $v[8]; ?></td>
+					<td><?php echo $v[9]; ?></td>
+					<td><?php echo $v[10]; ?></td>
+					<td><?php echo $v[11]; ?></td>
+					<td><?php echo $v[12]; ?></td>
+					<td><?php echo $v[13]; ?></td>
+					<td><?php echo $v[14]; ?></td>
+					<td><?php echo $v[15]; ?></td>
 				</tr>
 				<tr>
-					<td>></td>
+					<td><?php echo $h[3]; ?></td>
+					<td><?php echo $v[0]; ?></td>
+					<td><?php echo $v[1]; ?></td>
+					<td><?php echo $v[2]; ?></td>
+					<td><?php echo $v[3]; ?></td>
+					<td><?php echo $v[4]; ?></td>
+					<td><?php echo $v[5]; ?></td>
+					<td><?php echo $v[6]; ?></td>
+					<td><?php echo $v[7]; ?></td>
+					<td><?php echo $v[8]; ?></td>
+					<td><?php echo $v[9]; ?></td>
+					<td><?php echo $v[10]; ?></td>
+					<td><?php echo $v[11]; ?></td>
+					<td><?php echo $v[12]; ?></td>
+					<td><?php echo $v[13]; ?></td>
+					<td><?php echo $v[14]; ?></td>
+					<td><?php echo $v[15]; ?></td>
 				</tr>
 				<tr>
-					<td>League of losers</td>
+					<td><?php echo $h[4]; ?></td>
+					<td><?php echo $v[0]; ?></td>
+					<td><?php echo $v[1]; ?></td>
+					<td><?php echo $v[2]; ?></td>
+					<td><?php echo $v[3]; ?></td>
+					<td><?php echo $v[4]; ?></td>
+					<td><?php echo $v[5]; ?></td>
+					<td><?php echo $v[6]; ?></td>
+					<td><?php echo $v[7]; ?></td>
+					<td><?php echo $v[8]; ?></td>
+					<td><?php echo $v[9]; ?></td>
+					<td><?php echo $v[10]; ?></td>
+					<td><?php echo $v[11]; ?></td>
+					<td><?php echo $v[12]; ?></td>
+					<td><?php echo $v[13]; ?></td>
+					<td><?php echo $v[14]; ?></td>
+					<td><?php echo $v[15]; ?></td>
 				</tr>
 				<tr>
-					<td>BS</td>
-				</tr>
-				<tr>
-					<td></td>
+					<td><?php echo $h[5]; ?></td>
+					<td><?php echo $v[0]; ?></td>
+					<td><?php echo $v[1]; ?></td>
+					<td><?php echo $v[2]; ?></td>
+					<td><?php echo $v[3]; ?></td>
+					<td><?php echo $v[4]; ?></td>
+					<td><?php echo $v[5]; ?></td>
+					<td><?php echo $v[6]; ?></td>
+					<td><?php echo $v[7]; ?></td>
+					<td><?php echo $v[8]; ?></td>
+					<td><?php echo $v[9]; ?></td>
+					<td><?php echo $v[10]; ?></td>
+					<td><?php echo $v[11]; ?></td>
+					<td><?php echo $v[12]; ?></td>
+					<td><?php echo $v[13]; ?></td>
+					<td><?php echo $v[14]; ?></td>
+					<td><?php echo $v[15]; ?></td>
 				</tr>
 			</table>
 		</div>
