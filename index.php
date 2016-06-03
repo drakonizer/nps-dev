@@ -1,7 +1,22 @@
-<?php include 'thepotatoman.php'; ?>
+<?php 
+session_start();
+$_SESSION['h']=0;
+$_SESSION['d']=3;
+$_SESSION['shname']="";
+$_SESSION['shdetails']="";
+$_SESSION['sdname']="";
+$_SESSION['sddetails']="";
+$_SESSION['name']=array("","","","","","");
+$_SESSION['details']=array("","","","","","");
+include 'vote.php'; 
+
+?>
 <!DOCTYPE html>
 
 <html>
+	<?php dheed(); 
+		  head();
+	?>
 	<!-- some imports-->
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -95,19 +110,20 @@
 		</style>
 	    <!-- cards for the candidates -->
 		<body>
+		<form method="post" action="vote.php">
 		<div id="parentu_main" style="display: flex; justify-content: space-between;">
 		<div id="childu_main">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
+			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
+			  <div class="mdl-card__title mdl-card--expand" style="background:
 			url('picture/1.jpg')center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $h[0];?></h2>
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][0];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $ddetails[0]; ?>
+				<?php echo $_SESSION['details'][0]; ?>
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-				  <input type="radio" id="option-1" class="mdl-radio__button" name="optionsdh1" value="1">
+				  <input type="radio" id="option-1" class="mdl-radio__button" name="optionsdh" value="0" checked>
 				  <span class="mdl-radio__label">Pick Me!</span>
 				</label>
 			  </div>
@@ -115,17 +131,17 @@
 		</div>
 		<!-- end of card -->
 		<div id="childu_main">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('picture/2.jpg')center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $h[1];?></h2>
+			<div class="demo-card-square mdl-card mdl-shadow--8dp">
+			  <div class="mdl-card__title mdl-card--expand" style="background:
+			url('picture/1.jpg')center / cover;">
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][1];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $ddetails[1]; ?>
+				<?php echo $_SESSION['details'][1]; ?>
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-				  <input type="radio" id="option-2" class="mdl-radio__button" name="optionsdh2" value="2">
+				  <input type="radio" id="option-2" class="mdl-radio__button" name="optionsdh" value="1">
 				  <span class="mdl-radio__label">Pick Me!</span>
 				</label>
 			  </div>
@@ -133,25 +149,23 @@
 		</div>
 		<!-- end of second card-->
 		<div id="childu_main" style="margin-right: auto;">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('picture/3.jpg')center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $h[2];?></h2>
+			<div class="demo-card-square mdl-card mdl-shadow--8dp">
+			  <div class="mdl-card__title mdl-card--expand" style="background:
+			url('picture/1.jpg')center / cover;">
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][2];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $ddetails[2]; ?>
+				<?php echo $_SESSION['details'][2]; ?>
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-				<form method="POST" action="vote.php">
-				  <input type="radio" id="option-4" class="mdl-radio__button" name="optionsdh4" value="4">
-				</form>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+				  <input type="radio" id="option-3" class="mdl-radio__button" name="optionsdh" value="2">
 				  <span class="mdl-radio__label">Pick Me!</span>
 				</label>
 			  </div>
 			</div>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="tab2();">
+		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" name="submit1">
 			<img src="icons/forward.png"></img>
 		</button>
 		</div>
@@ -162,17 +176,17 @@
 	<!-- Head Cards -->
 		<div id="parentu_head" style="display: none; justify-content: space-between;">
 		<div id="childu_main">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('picture/4.jpg')center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $h[3];?></h2>
+			<div class="demo-card-square mdl-card mdl-shadow--8dp">
+			  <div class="mdl-card__title mdl-card--expand" style="background:
+			url('picture/1.jpg')center / cover;">
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][3];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $hdetails[0]; ?>
+				<?php echo $_SESSION['details'][3]; ?>
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
-				  <input type="radio" id="option-5" class="mdl-radio__button" name="optionsh" value="5">
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+				  <input type="radio" id="option-4" class="mdl-radio__button" name="optionsh" value="3" checked>
 				  <span class="mdl-radio__label">Pick Me!</span>
 				</label>
 			  </div>
@@ -180,17 +194,17 @@
 		</div>
 		<!-- end of card -->
 		<div id="childu_main">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('picture/5.jpg')center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $h[4];?></h2>
+			<div class="demo-card-square mdl-card mdl-shadow--8dp">
+			  <div class="mdl-card__title mdl-card--expand" style="background:
+			url('picture/1.jpg')center / cover;">
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][4];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $hdetails[1]; ?>
+				<?php echo $_SESSION['details'][4]; ?>
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
-				  <input type="radio" id="option-6" class="mdl-radio__button" name="optionsh" value="6">
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+				  <input type="radio" id="option-5" class="mdl-radio__button" name="optionsh" value="4">
 				  <span class="mdl-radio__label">Pick Me!</span>
 				</label>
 			  </div>
@@ -198,23 +212,22 @@
 		</div>
 		<!-- end of second card-->
 		<div id="childu_main" style="margin-right: auto;">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
-			url('picture/6.jpg')center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $h[5];?></h2>
+			<div class="demo-card-square mdl-card mdl-shadow--8dp">
+			  <div class="mdl-card__title mdl-card--expand" style="background:
+			url('picture/1.jpg')center / cover;">
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][5];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $hdetails[2]; ?>
+				<?php echo $_SESSION['details'][5]; ?>
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-				<form method="POST" action="vote.php">
-				  <input type="radio" id="option-4" class="mdl-radio__button" name="optionsdh4" value="4">
-				</form>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
+				  <input type="radio" id="option-6" class="mdl-radio__button" name="optionsh" value="5">
 				  <span class="mdl-radio__label">Pick Me!</span>
 				</label>
 			  </div>
 			</div>
+		</form>
 		<div id="dbtn">
 		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="tab3();">
 			<img src="icons/forward.png"></img>
@@ -226,24 +239,24 @@
 	<!-- confirmation cards -->
 	<div id="confirm_candy" style="display: none;">
 		<div id="childu_main">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
+			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
+			  <div class="mdl-card__title mdl-card--expand" style="background:
 			url(<?php echo $dpic ?>)center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $_SESSION['dhead'];?></h2>
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][$_SESSION['h']];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $ddetails; ?>
+				<?php echo $_SESSION['sddetails']; ?>
 			  </div>
 			  </div>
 			</div>
 		<div id="childu_main" style="margin-right: auto;">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" style="background:
+			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
+			  <div class="mdl-card__title mdl-card--expand" style="background:
 			url(<?php echo $hpic ?>)center / cover;">
-			  <div class="mdl-card__title mdl-card--expand">
-				<h2 class="mdl-card__title-text"><?php echo $_SESSION['head'];?></h2>
+				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][$_SESSION['d']];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-				<?php echo $hdetails; ?>
+				<?php echo $_SESSION['shdetails']; ?>
 			  </div>
 			  </div>
 			</div>

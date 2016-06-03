@@ -64,7 +64,7 @@
 	   
 		<body>
 		<div id="parentu" style="padding-top: 150px;">
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c1.jpg') center / contain; background-repeat:no-repeat;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-paget.php'" style="background: url('c1.jpg') center / contain; background-repeat:no-repeat;" id="select">
 		  <div href="pass-page.php" class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
 		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c2.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
@@ -72,10 +72,10 @@
 		</div>
 		</div>
 		<div id="parentu" style="padding-top: 20px; margin-bottom: 50px">		
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c3.jpg') center / contain; background-repeat:no-repeat;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-pagea.php'" style="background: url('c3.jpg') center / contain; background-repeat:no-repeat;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('c4.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-pagev.php'" style="background: url('c4.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>	
 		</div>

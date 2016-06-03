@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("192.168.1.57","root","somethingsensibal","dhead","3307");
+$con=mysqli_connect("192.168.1.57","NPS57","","dhead","3307");
 
 if (mysqli_connect_errno())
 

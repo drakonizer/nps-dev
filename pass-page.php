@@ -1,6 +1,7 @@
 <?php 
-$page=1;
 include 'login.php';
+$_SESSION['error']="Enter your password";
+
  ?>
 <!DOCTYPE html>
 
@@ -50,16 +51,16 @@ include 'login.php';
 			<div class="mdl-card__supporting-text" id="passform" style="width: 300px; height: 50px; background: #F44336">
 				<p style="color: #ffffff;">Please enter the password needed to access this portion of the website</p>
 			</div>
-			<form action="#">
+			<form action="" method="post">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="passform" style="margin-top: 90px;">
-				<input class="mdl-textfield__input" type="password" id="uniqueid" style="width: 300px;">
-				<label class="mdl-textfield__label" for="password">Enter your password...</label>
+				<input class="mdl-textfield__input" type="password" id="password" name="password" style="width: 300px;">
+				<label class="mdl-textfield__label" for="password"><?php echo $_SESSION['error']; ?></label>
 			  </div>
-			</form>
 			<div id="passform" style="margin-top: 150px;">
-			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="submit">
+			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="submit" type="submit" id="submit">
 				<img style="width: 30px; height: 30px;" src="icons/send.png"></i>
 			</button>
 			</div>
+			</form>
 		</body>
 </html>
