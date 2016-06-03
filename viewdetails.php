@@ -4,6 +4,7 @@
 
 <html>
 	<!-- some imports-->
+	<link rel="icon" type="image/png" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">

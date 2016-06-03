@@ -2,12 +2,14 @@
 
 <html>
 	<!-- some imports-->
+
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="js/jQuery.js"></script>
 	<script type="text/javascript" src="js/material.min.js"></script>
 	<title>Voting System</title>
 	<head>
+			<link rel="shortcut icon" href="icon.png">
 			<!-- Uses a transparent header that draws on top of the layout's background -->
 			<style>
 			.demo-layout-transparent {
@@ -40,6 +42,7 @@
 			</header>
 			<main class="mdl-layout__content">
 			</main>
+	</head>
 			</div>
 	    <!-- Wide card with share menu button -->
 		<!-- Image card -->

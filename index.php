@@ -8,16 +8,12 @@ $_SESSION['sdname']="";
 $_SESSION['sddetails']="";
 $_SESSION['name']=array("","","","","","");
 $_SESSION['details']=array("","","","","","");
-include 'vote.php'; 
-
 ?>
 <!DOCTYPE html>
 
 <html>
-	<?php dheed(); 
-		  head();
-	?>
 	<!-- some imports-->
+	<link rel="icon" type="image/png" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="js/jQuery.js"></script>
@@ -110,7 +106,7 @@ include 'vote.php';
 		</style>
 	    <!-- cards for the candidates -->
 		<body>
-		<form method="post" action="vote.php">
+		<form method="post" action="">
 		<div id="parentu_main" style="display: flex; justify-content: space-between;">
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
@@ -165,7 +161,7 @@ include 'vote.php';
 			  </div>
 			</div>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" name="submit1">
+		<button type="button" class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="tab2();">
 			<img src="icons/forward.png"></img>
 		</button>
 		</div>
@@ -227,9 +223,8 @@ include 'vote.php';
 				</label>
 			  </div>
 			</div>
-		</form>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="tab3();">
+		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="button" onclick="tab3();">
 			<img src="icons/forward.png"></img>
 		</button>
 		</div>
@@ -261,11 +256,12 @@ include 'vote.php';
 			  </div>
 			</div>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="showSnax();">
+		<button type="submit" class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="showSnax();">
 		  <img src="icons/done_all.png"></img>
 		</button>
 		</div>
 	</div>
+	</form>
 	</body>
 		<div id="snackbarz" class="mdl-js-snackbar mdl-snackbar">
 		  <div class="mdl-snackbar__text"></div>

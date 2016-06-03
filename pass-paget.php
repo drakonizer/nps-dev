@@ -7,6 +7,7 @@ include 'login.php';
 
 <html>
 	<!-- some imports-->
+	<link rel="icon" type="image/png" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="js/jQuery.js"></script>

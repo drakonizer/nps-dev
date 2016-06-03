@@ -13,6 +13,7 @@ include 'login.php';
 
 	<title>Enter Password</title>
 	<head>
+		<link rel="icon" type="image/png" href="icon.png">
 			<!-- Uses a transparent header that draws on top of the layout's background -->
 			<style>
 			.demo-layout-transparent {
@@ -46,6 +47,7 @@ include 'login.php';
 			<main class="mdl-layout__content">
 			</main>
 			</div>
+		</head>
 		<body>
 			<div class="mdl-card__supporting-text" id="passform" style="width: 300px; height: 50px; background: #F44336">
 				<p style="color: #ffffff;">Please enter the password needed to access this portion of the website</p>

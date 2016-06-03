@@ -14,9 +14,9 @@ if($_SESSION['loggedin']==1)
 }
 else
 {
-    echo "Dont try anything sneaky noob";
-    session_destroy();
-    header("Location: home.php");
+    //echo "Dont try anything sneaky noob";
+    //session_destroy();
+    //header("Location: home.php");
     //secret();
 }
 for($i=0;$i<6;$i++)

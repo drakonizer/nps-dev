@@ -47,6 +47,3 @@ function head()
         }
 	}
 }
-if(isset($_POST['submit1']))
-	header("Location: index.php#fixed-tab-2");
-?> 
