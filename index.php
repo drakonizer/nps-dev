@@ -8,10 +8,14 @@ $_SESSION['sdname']="";
 $_SESSION['sddetails']="";
 $_SESSION['name']=array("","","","","","");
 $_SESSION['details']=array("","","","","","");
+include 'vote.php';
 ?>
 <!DOCTYPE html>
 
 <html>
+	<?php dheed();
+		  head();
+	?>
 	<!-- some imports-->
 	<link rel="icon" type="image/png" href="icon.png">
 	<link rel="stylesheet" type="text/css" href="css/material.min.css">
@@ -38,7 +42,7 @@ $_SESSION['details']=array("","","","","","");
 			<header class="mdl-layout__header mdl-layout__header--transparent mdl-shadow--16dp" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
+					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
@@ -47,7 +51,7 @@ $_SESSION['details']=array("","","","","","");
 						<a class="mdl-navigation__link" href="pass-page.php">Student Vote</a>
 						<a class="mdl-navigation__link" href="pass-paget.php">Teacher Vote</a>
 						<a class="mdl-navigation__link" href="pass-pagea.php">Add Details</a>
-						<a class="mdl-navigation__link" href="pass-pagev.php">View Results!</a>
+						<a class="mdl-navigation__link" href="pass-pagev.php">View Results</a>
 					</nav>
 				</div>
 					<!-- script for confirmation toggle -->
@@ -87,7 +91,7 @@ $_SESSION['details']=array("","","","","","");
 				<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background: transparent">
 					<a href="#fixed-tab-1" id="t1" class="mdl-layout__tab is-active" onclick="conf('parentu_main', getName());">Deputy-Head</a>
 					<a href="#fixed-tab-2" id="t2" class="mdl-layout__tab" onclick="conf('parentu_head', getName());">Head</a>
-					<a href="#fixed-tab-3" id="t3" class="mdl-layout__tab" onclick="conf('confirm_candy', getName());">Confirmation</a>
+					<a href="conf.php" id="t3" class="mdl-layout__tab">Confirmation</a>
 					
 				</div>
 			</header>
@@ -106,12 +110,12 @@ $_SESSION['details']=array("","","","","","");
 		</style>
 	    <!-- cards for the candidates -->
 		<body>
-		<form method="post" action="">
+		<form method="post" action="potatoconf.php">
 		<div id="parentu_main" style="display: flex; justify-content: space-between;">
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/1.jpg')center / cover;">
+			url('picture/0.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][0];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -147,7 +151,7 @@ $_SESSION['details']=array("","","","","","");
 		<div id="childu_main" style="margin-right: auto;">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/1.jpg')center / cover;">
+			url('picture/2.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][2];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -174,7 +178,7 @@ $_SESSION['details']=array("","","","","","");
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/1.jpg')center / cover;">
+			url('picture/3.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][3];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -192,7 +196,7 @@ $_SESSION['details']=array("","","","","","");
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/1.jpg')center / cover;">
+			url('picture/4.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][4];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -210,7 +214,7 @@ $_SESSION['details']=array("","","","","","");
 		<div id="childu_main" style="margin-right: auto;">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/1.jpg')center / cover;">
+			url('picture/5.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][5];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -224,47 +228,12 @@ $_SESSION['details']=array("","","","","","");
 			  </div>
 			</div>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="button" onclick="tab3();">
+		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="submit" onclick="tab3();">
 			<img src="icons/forward.png"></img>
 		</button>
 		</div>
 		</div>
+		</form>
 		<!-- end of cards -->
 	</div>
-	<!-- confirmation cards -->
-	<div id="confirm_candy" style="display: none;">
-		<div id="childu_main">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
-			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url(<?php echo $dpic ?>)center / cover;">
-				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][$_SESSION['h']];?></h2>
-			  </div>
-			  <div class="mdl-card__supporting-text">
-				<?php echo $_SESSION['sddetails']; ?>
-			  </div>
-			  </div>
-			</div>
-		<div id="childu_main" style="margin-right: auto;">
-			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
-			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url(<?php echo $hpic ?>)center / cover;">
-				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][$_SESSION['d']];?></h2>
-			  </div>
-			  <div class="mdl-card__supporting-text">
-				<?php echo $_SESSION['shdetails']; ?>
-			  </div>
-			  </div>
-			</div>
-		<div id="dbtn">
-		<button type="submit" class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="showSnax();">
-		  <img src="icons/done_all.png"></img>
-		</button>
-		</div>
-	</div>
-	</form>
-	</body>
-		<div id="snackbarz" class="mdl-js-snackbar mdl-snackbar">
-		  <div class="mdl-snackbar__text"></div>
-		  <button class="mdl-snackbar__action" type="button"></button>
-		</div>
 </html>

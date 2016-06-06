@@ -14,10 +14,10 @@ function dheed()
             $_SESSION['details'][$i]=$row['details'];
             if(isset($_POST['optionsdh']))
             {
-                $h=$_POST['optionsdh'];
-                if($i==(int)$h)
+                $dh=$_POST['optionsdh'];
+                if($i==(int)$dh)
                 {
-                    $_SESSION['d']=$h;
+                    $_SESSION['d']=$dh;
                 }
             }
         }
@@ -42,7 +42,7 @@ function head()
             $_SESSION['details'][$j]=$row['details'];
             if(isset($_POST['optionsh']))
             {
-                $_SESSION['d']=$_POST['optionsh'];
+                $_SESSION['h']=$_POST['optionsh'];
             }
         }
 	}

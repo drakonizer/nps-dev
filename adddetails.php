@@ -1,12 +1,11 @@
 <?php
 session_start();
-if(isset($_POST['submit']))
-{
+	
     if(empty($_POST['name']))
     {
         header("Location: details.php");
     }
-    else if(empty($_POST['class']))
+    else if(empty($_POST['lastname']))
     {
         header("Location: details.php");
     }
@@ -14,7 +13,7 @@ if(isset($_POST['submit']))
     {
         header("Location: details.php");
     }
-    else
+    /*else
     {
         $target_dir = "picture/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -61,24 +60,28 @@ if(isset($_POST['submit']))
             {
                 echo "Sorry, there was an error uploading your image.";
             }
-        }
-        $name=$_POST['name'];
-        $class=$_POST['tagline'];
-        $details=$_POST['details'];
+        }}*/
+        $name=mysqli_escape_string($_POST['name']." ".$_POST['lastname']);
+        $details=mysqli_escape_string($_POST['details']);
         $con=mysqli_connect("192.168.1.57","NPS57","","dhead","3307");
         if (mysqli_connect_errno())
         {
             echo "Database could not be found.". mysqli_connect_error();
         }
-        $sql = "UPDATE mdb SET name=$name,class=$class,details=$details WHERE name=''";
+        $sql = "INSERT INTO mdb (name,details,total,votes) VALUES ('$name','$details',0,0)";
+		$_SESSION['shoot']+=1;
+		
+		$sql1= "ALTER TABLE `dhead` ADD COLUMN `$name` INT DEFAULT 0 AFTER pass ";
         if(mysqli_query($con, $sql))
-        {
+        {	
+		if(mysqli_query($con, $sql1)){
             echo "Student added to the list of candidates";
-        }
+			header("Location: details.php");
+		}}
         else
         {
             echo "for some stupid reason the query has failed.";
         }
-    }
-}
+    
+
 ?> 

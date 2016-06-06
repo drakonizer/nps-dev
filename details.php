@@ -1,4 +1,6 @@
-<?php include 'thepotatoman.php'; ?>
+<!--?php include 'thepotatoman.php'; ?-->
+
+
 <!DOCTYPE html>
 <html>
 	<!-- some imports-->
@@ -27,7 +29,7 @@
 			<header class="mdl-layout__header mdl-layout__header--transparent mdl-shadow--16dp" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting Software | 2016-2017</span>
+					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
@@ -45,38 +47,32 @@
 			</div>
 		<body>
 			<!-- candidate info fields -->
+		<form action="adddetails.php" method="post">
 		<div id="passform" style="margin-top: 150px;">
 			<!-- first name -->
-			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<input class="mdl-textfield__input" type="text" id="name">
+				<input class="mdl-textfield__input" type="text" name="name" id="name">
 				<label class="mdl-textfield__label" for="name">Candidate's name</label>
 			  </div>
-			</form>
-			
-			<!-- tag-line -->
-			<form action="#">
+			  <br></br>
+			<!-- last-name -->
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<input class="mdl-textfield__input" type="text" id="tagline">
-				<label class="mdl-textfield__label" for="tagline">Tagline</label>
+				<input class="mdl-textfield__input" type="text" name="lastname" id="lastname">
+				<label class="mdl-textfield__label" for="tagline">Last Name</label>
 			  </div>
-			</form> 
-			
+			  <br></br>
 			<!-- description -->
-			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				<textarea class="mdl-textfield__input" type="text" rows= "3" id="details" ></textarea>
+				<textarea class="mdl-textfield__input" type="text" rows= "3" name="details" id="details" ></textarea>
 				<label class="mdl-textfield__label" for="details">Description</label>
 			  </div>
-			</form>
-			
+			  <br></br>
 			<!--dp -->
-			<form>
 				<label for="file" class="mdl-shadow--8dp mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
 				  <img style="width: 30px; height: 30px;" src="icons/upload.png" id="upl"></img>Upload Image
 				</label>
 				<input type="file" id="file" style="display: none;">
-				<button class="mdl-button mdl-shadow--8dp mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="submit" style="margin-left: 20px">
+				<button type="submit" class="mdl-button mdl-shadow--8dp mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="submit" style="margin-left: 20px">
 				  <img style="width: 30px; height: 30px;" src="icons/assignment.png" id="upl"></i>Done
 				</button>
 			</form>

@@ -1,7 +1,8 @@
 <?php
 session_start();
-$page=1;
+
 $_SESSION['loggedin']=0;
+
 if (isset($_POST['submit']))
 {
     if (empty($_POST['password']))
@@ -22,26 +23,29 @@ if (isset($_POST['submit']))
         $check_user = mysqli_num_rows($run_user);
         if($check_user>0)
         {
+		$row = mysqli_fetch_assoc($run_user);
             $_SESSION['login']=true;
-            if($page==1)
+			$_SESSION['class']=$row['class'];
+            if($page==1 && $_SESSION['class']!="teacher" && $_SESSION['class']!="adddetails" && $_SESSION['class']!="viewresult")
             {
                 header("Location: index.php");
             }
-            else if($page==2)
-            {
-                header("Location: details.php");
-            }
-            else if($page==3)
+            else if($page==2 && $_SESSION['class']=="teacher")
             {
                 header("Location: index.php");
             }
-            else if($page==4)
+            else if($page==3 && $_SESSION['class']=="adddetails")
+            {
+				header("Location: details.php");
+            }
+            else if ($page==4 && $_SESSION['class']=="viewresult")
             {
                 header("Location: viewdetails.php");
             }
             else
             {
-                header("Location: home.php");
+				session_destroy();
+			   header("Refresh:0");
             }
         }
     }
