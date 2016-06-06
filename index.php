@@ -62,6 +62,10 @@ include 'vote.php';
 								document.getElementById(toNone).style.display = 'none';
 								}
 							}
+							function subform()
+							{
+								$("#subbut").trigger("click");
+							}
 							function getName()
 							{
 								if(document.getElementById('parentu_main').style.display == 'flex')
@@ -91,7 +95,7 @@ include 'vote.php';
 				<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background: transparent">
 					<a href="#fixed-tab-1" id="t1" class="mdl-layout__tab is-active" onclick="conf('parentu_main', getName());">Deputy-Head</a>
 					<a href="#fixed-tab-2" id="t2" class="mdl-layout__tab" onclick="conf('parentu_head', getName());">Head</a>
-					<a href="conf.php" id="t3" class="mdl-layout__tab">Confirmation</a>
+					<a href="#" id="t3" onclick="$(#subbut).click();" class="mdl-layout__tab">Confirmation</a>
 					
 				</div>
 			</header>
@@ -110,7 +114,7 @@ include 'vote.php';
 		</style>
 	    <!-- cards for the candidates -->
 		<body>
-		<form method="post" action="potatoconf.php">
+		<form method="post" id="myForm" name="myForm" action="potatoconf.php">
 		<div id="parentu_main" style="display: flex; justify-content: space-between;">
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
@@ -124,7 +128,7 @@ include 'vote.php';
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
 				  <input type="radio" id="option-1" class="mdl-radio__button" name="optionsdh" value="0" checked>
-				  <span class="mdl-radio__label">Pick Me!</span>
+				  <span class="mdl-radio__label">Select this candidate</span>
 				</label>
 			  </div>
 			</div>
@@ -142,7 +146,7 @@ include 'vote.php';
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
 				  <input type="radio" id="option-2" class="mdl-radio__button" name="optionsdh" value="1">
-				  <span class="mdl-radio__label">Pick Me!</span>
+				  <span class="mdl-radio__label">Select this candidate</span>
 				</label>
 			  </div>
 			</div>
@@ -160,7 +164,7 @@ include 'vote.php';
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
 				  <input type="radio" id="option-3" class="mdl-radio__button" name="optionsdh" value="2">
-				  <span class="mdl-radio__label">Pick Me!</span>
+				  <span class="mdl-radio__label">Select this candidate</span>
 				</label>
 			  </div>
 			</div>
@@ -187,7 +191,7 @@ include 'vote.php';
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
 				  <input type="radio" id="option-4" class="mdl-radio__button" name="optionsh" value="3" checked>
-				  <span class="mdl-radio__label">Pick Me!</span>
+				  <span class="mdl-radio__label">Select this candidate</span>
 				</label>
 			  </div>
 			</div>
@@ -205,7 +209,7 @@ include 'vote.php';
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
 				  <input type="radio" id="option-5" class="mdl-radio__button" name="optionsh" value="4">
-				  <span class="mdl-radio__label">Pick Me!</span>
+				  <span class="mdl-radio__label">Select this candidate</span>
 				</label>
 			  </div>
 			</div>
@@ -223,12 +227,12 @@ include 'vote.php';
 			  <div class="mdl-card__actions mdl-card--border">
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
 				  <input type="radio" id="option-6" class="mdl-radio__button" name="optionsh" value="5">
-				  <span class="mdl-radio__label">Pick Me!</span>
+				  <span class="mdl-radio__label">Select this candidate</span>
 				</label>
 			  </div>
 			</div>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="submit" onclick="tab3();">
+		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="submit" id="subbut" name="subbut" onclick="tab3();">
 			<img src="icons/forward.png"></img>
 		</button>
 		</div>

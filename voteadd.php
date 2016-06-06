@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 session_start();
 $con=mysqli_connect("192.168.1.57","NPS57","","dhead","3307");
 if (mysqli_connect_errno())
@@ -56,7 +57,14 @@ $row = mysqli_fetch_assoc($run_user);
 			{
 				if(mysqli_query($con, $sql3))
 				{
-				header("Location: pass-page.php");
+					switch($_SESSION['selpage'])
+					{
+						case 1: header("Location: pass-page.php");
+						break;
+						case 2: header("Location: pass-paget.php");
+						break;
+						default: header("Location: home.php");
+					}
 				}
 			}
 		}

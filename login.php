@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+error_reporting(0);
 $_SESSION['loggedin']=0;
 
 if (isset($_POST['submit']))
@@ -26,6 +26,7 @@ if (isset($_POST['submit']))
 		$row = mysqli_fetch_assoc($run_user);
             $_SESSION['login']=true;
 			$_SESSION['class']=$row['class'];
+			$_SESSION['selpage']=$page;
             if($page==1 && $_SESSION['class']!="teacher" && $_SESSION['class']!="adddetails" && $_SESSION['class']!="viewresult")
             {
                 header("Location: index.php");
@@ -45,7 +46,7 @@ if (isset($_POST['submit']))
             else
             {
 				session_destroy();
-			   header("Refresh:0");
+				header("Refresh:0");
             }
         }
     }

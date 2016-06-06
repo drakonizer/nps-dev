@@ -59,20 +59,23 @@ include 'results.php';
 		<div id="passform" style="margin-top: 164px;">
 			<table class="mdl-data-table mdl-shadow--16dp">
 				<tr class="mdl-data-table">
-					<td>Candidates</td>
-					<td>9A</td>
-					<td>9B</td>
-					<td>9C</td>
-					<td>10A</td>
-					<td>10B</td>
-					<td>10C</td>
-					<td>11A</td>
-					<td>11B</td>
-					<td>11C</td>
-					<td>12A</td>
-					<td>12B</td>
-					<td>Teachers</td>
-					<td>Total</td>
+					<td><b>Candidates</b></td>
+					<td><b>9A</b></td>
+					<td><b>9B</b></td>
+					<td><b>9C</b></td>
+					<td><b>10A</b></td>
+					<td><b>10B</b></td>
+					<td><b>10C</b></td>
+					<td><b>11A</b></td>
+					<td><b>11B</b></td>
+					<td><b>11C</b></td>
+					<td><b>12A</b></td>
+					<td><b>12B</b></td>
+					<td><b>Teachers</b></td>
+					<td><b>Total</b></td>
+				</tr>
+				<tr>
+					<td><b>Deputy-Head</b></td>
 				</tr>
 				<tr>
 					<td><?php echo $name[0]; ?></td>
@@ -121,6 +124,9 @@ include 'results.php';
 					<td><?php echo $class[2][10]; ?></td>
 					<td><?php echo $class[2][11]; ?></td>
 					<td><?php echo $total[2]; ?></td>
+				</tr>
+				<tr>
+					<td><b>Head</b></td>
 				</tr>
 				<tr>
 					<td><?php echo $name[3]; ?></td>

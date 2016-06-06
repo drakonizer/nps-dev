@@ -77,12 +77,17 @@ include 'vote.php';
 							{
 								$(".mdl-layout__tab:eq(2) span").click ();
 							}
+							function submitForm()
+							{
+								document.getElementById("confirm").submit();
+							}
 							function showSnax()
 							{
 								'use strict';
 								  var snackbarContainer = document.querySelector('#snackbarz');
 									var data = {message: 'Your vote has been successfully cast!'};
 									snackbarContainer.MaterialSnackbar.showSnackbar(data);
+									setTimeout("submitForm()", 3000);
 							}
 					</script>	
 				<!-- Tabs -->
@@ -133,8 +138,8 @@ include 'vote.php';
 			  </div>
 			</div>
 		<div id="dbtn">
-		<form method="post" action="voteadd.php">
-		<button type="submit" class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="showSnax();">
+		<form method="post" id="confirm" name="confirm" action="voteadd.php">
+		<button type="button" class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="showSnax();">
 		  <img src="icons/done_all.png"></img>
 		</button>
 		</form>

@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 if(!isset($_SESSION['loggedin']))
 $_SESSION['loggedin']=0;
 $con=mysqli_connect("192.168.1.57","NPS57","","dhead");

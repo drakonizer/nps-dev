@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 session_start();
 	
     if(empty($_POST['name']))
@@ -61,8 +62,8 @@ session_start();
                 echo "Sorry, there was an error uploading your image.";
             }
         }}*/
-        $name=mysqli_escape_string($_POST['name']." ".$_POST['lastname']);
-        $details=mysqli_escape_string($_POST['details']);
+        $name=$_POST['name']." ".$_POST['lastname'];
+        $details=$_POST['details'];
         $con=mysqli_connect("192.168.1.57","NPS57","","dhead","3307");
         if (mysqli_connect_errno())
         {
