@@ -68,7 +68,7 @@ include 'thepotatoman.php'; ?>
 			  </div>
 			  <br></br>
 			<!--dp -->
-				<button type="submit" class="mdl-button mdl-shadow--8dp mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="submit" style="margin-left: 20px">
+				<button type="submit" class="mdl-button mdl-shadow--8dp mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="submit" style="margin-left: 90px;">
 				  <img style="width: 30px; height: 30px;" src="icons/assignment.png" id="upl"></i>Done
 				</button>
 			</form>
