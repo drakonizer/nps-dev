@@ -1,6 +1,8 @@
 <?php
 error_reporting(0);
+ini_set('display_errors', 'Off');
 session_start();
+$_SESSION['loggedin']=1;
 $con = mysqli_connect("192.168.1.57","NPS57","","dhead","3307");
 for($i=0;$i<3;$i++)
 {

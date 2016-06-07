@@ -3,6 +3,7 @@ session_start();
 $total = array_fill(0,6,0);
 $name = array_fill(0,6,'');
 $class = array_fill(0,6,array_fill(0,12,0));
+include 'thepotatoman.php';
 include 'results.php'; 
 ?>
 
@@ -75,7 +76,7 @@ include 'results.php';
 					<td><b>Total</b></td>
 				</tr>
 				<tr>
-					<td><b>Deputy-Head</b></td>
+					<td><b>School Vice-Prefect</b></td>
 				</tr>
 				<tr>
 					<td><?php echo $name[0]; ?></td>
@@ -126,7 +127,7 @@ include 'results.php';
 					<td><?php echo $total[2]; ?></td>
 				</tr>
 				<tr>
-					<td><b>Head</b></td>
+					<td><b>School Prefect</b></td>
 				</tr>
 				<tr>
 					<td><?php echo $name[3]; ?></td>

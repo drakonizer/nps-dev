@@ -8,6 +8,7 @@ $_SESSION['sdname']="";
 $_SESSION['sddetails']="";
 $_SESSION['name']=array("","","","","","");
 $_SESSION['details']=array("","","","","","");
+include 'thepotatoman.php';
 include 'vote.php';
 ?>
 <!DOCTYPE html>
@@ -81,7 +82,8 @@ include 'vote.php';
 							}
 							function tab3()
 							{
-								$(".mdl-layout__tab:eq(2) span").click ();
+								//$(".mdl-layout__tab:eq(2) span").click ();
+								location.replace('conf.php');
 							}
 							function showSnax()
 							{
@@ -93,9 +95,9 @@ include 'vote.php';
 					</script>	
 				<!-- Tabs -->
 				<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background: transparent">
-					<a href="#fixed-tab-1" id="t1" class="mdl-layout__tab is-active" onclick="conf('parentu_main', getName());">Deputy-Head</a>
-					<a href="#fixed-tab-2" id="t2" class="mdl-layout__tab" onclick="conf('parentu_head', getName());">Head</a>
-					<a href="#" id="t3" onclick="$(#subbut).click();" class="mdl-layout__tab">Confirmation</a>
+					<a href="#fixed-tab-1" id="t1" class="mdl-layout__tab is-active" onclick="conf('parentu_main', getName());">School Vice-Prefect</a>
+					<a href="#fixed-tab-2" id="t2" class="mdl-layout__tab" onclick="conf('parentu_head', getName());">School Prefect</a>
+					<a href="#" id="t3" onclick="document.getElementById('myForm').submit();" class="mdl-layout__tab">Confirmation</a>
 					
 				</div>
 			</header>
@@ -232,7 +234,7 @@ include 'vote.php';
 			  </div>
 			</div>
 		<div id="dbtn">
-		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="submit" id="subbut" name="subbut" onclick="tab3();">
+		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="submit" id="subbut" name="subbut">
 			<img src="icons/forward.png"></img>
 		</button>
 		</div>

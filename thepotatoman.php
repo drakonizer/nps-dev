@@ -1,7 +1,8 @@
 <?php
 error_reporting(0);
+ini_set('display_errors', 'Off');
 if(!isset($_SESSION['loggedin']))
-$_SESSION['loggedin']=0;
+	$_SESSION['loggedin']=0;
 $con=mysqli_connect("192.168.1.57","NPS57","","dhead");
 $h=array("","","","","","");
 $v=array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
@@ -15,9 +16,9 @@ if($_SESSION['loggedin']==1)
 }
 else
 {
-    //echo "Dont try anything sneaky noob";
-    //session_destroy();
-    //header("Location: home.php");
+    echo "Dont try anything sneaky noob";
+    session_destroy();
+    header("Location: home.php");
     //secret();
 }
 for($i=0;$i<6;$i++)

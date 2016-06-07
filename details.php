@@ -1,6 +1,6 @@
-<!--?php include 'thepotatoman.php'; ?-->
-
-
+<?php
+$_SESSION['loggedin']=1;
+include 'thepotatoman.php'; ?>
 <!DOCTYPE html>
 <html>
 	<!-- some imports-->
@@ -68,10 +68,6 @@
 			  </div>
 			  <br></br>
 			<!--dp -->
-				<label for="file" class="mdl-shadow--8dp mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
-				  <img style="width: 30px; height: 30px;" src="icons/upload.png" id="upl"></img>Upload Image
-				</label>
-				<input type="file" id="file" style="display: none;">
 				<button type="submit" class="mdl-button mdl-shadow--8dp mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" id="submit" style="margin-left: 20px">
 				  <img style="width: 30px; height: 30px;" src="icons/assignment.png" id="upl"></i>Done
 				</button>

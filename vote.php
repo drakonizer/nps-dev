@@ -1,5 +1,7 @@
 <?php
 error_reporting(0);
+ini_set('display_errors', 'Off');
+$_SESSION['loggedin']=1;
 function dheed()
 {
 	$con = mysqli_connect("192.168.1.57","NPS57","","dhead","3307");

@@ -1,6 +1,7 @@
 <?php 
 session_start();
 $_SESSION['shoot']=0;
+$_SESSION['loggedin']=0;
 ?>
 
 <!DOCTYPE html>

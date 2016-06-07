@@ -1,6 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
+ini_set('display_errors', 'Off');
 $_SESSION['loggedin']=0;
 
 if (isset($_POST['submit']))
@@ -27,6 +28,7 @@ if (isset($_POST['submit']))
             $_SESSION['login']=true;
 			$_SESSION['class']=$row['class'];
 			$_SESSION['selpage']=$page;
+			$_SESSION['loggedin']=1;
             if($page==1 && $_SESSION['class']!="teacher" && $_SESSION['class']!="adddetails" && $_SESSION['class']!="viewresult")
             {
                 header("Location: index.php");

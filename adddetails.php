@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+ini_set('display_errors', 'Off');
 session_start();
 	
     if(empty($_POST['name']))
@@ -84,5 +85,4 @@ session_start();
             echo "for some stupid reason the query has failed.";
         }
     
-
 ?> 

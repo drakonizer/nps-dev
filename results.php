@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+ini_set('display_errors', 'Off');
 $con=mysqli_connect("192.168.1.57","NPS57","","dhead","3307");
 if (mysqli_connect_errno())
 {
@@ -29,6 +30,7 @@ for($i=0;$i<6;$i++)
 		}
 		    }
         }
+		$_SESSION['loggedin']=0;
 		
 	}
 ?>
