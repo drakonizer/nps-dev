@@ -4,13 +4,14 @@
 	<title>
 		You found it!
 	</title>
-	<body font="Consolas">
+	<body font="Courier New">
 		The 133t minds behind this piece of software!
+		<p>drakonizer</p>
+		<img src="droid.png">
+		<br></br>
 		<p>Icyphox</p>
 		<img src="phoxface.png">
 		<br></br>
-		<p>drakonizer</p>
-		<img src="droid.png">
 		<p>HyperPotato</p>
 		<img src="potato.jpeg">
 	</body>
