@@ -33,7 +33,9 @@ $_SESSION['shoot']=0;
 			<header class="mdl-layout__header mdl-layout__header--transparent mdl-shadow--16dp" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
+					
+					<span onclick="location.href(easteregg.html)" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
+					
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
@@ -86,7 +88,5 @@ $_SESSION['shoot']=0;
 		</div>
 		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-pagev.php'" style="background: url('c4.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
-		</div>	
-		</div>
 	</body>
 </html>
