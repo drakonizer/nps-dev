@@ -18,7 +18,7 @@ else
 {
     echo "Dont try anything sneaky noob";
     session_destroy();
-    header("Location: ../html/home.php");
+    header("Location: ../index.php");
     //secret();
 }
 for($i=0;$i<6;$i++)

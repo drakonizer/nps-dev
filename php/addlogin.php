@@ -28,7 +28,7 @@ if (isset($_POST['submit']))
         }
         else
         {
-            header("../html/home.php");
+            header("../index.php");
         }
 	}
 }

@@ -61,11 +61,11 @@ $row = mysqli_fetch_assoc($run_user);
 				$_SESSION['loggedin']=0;
 					switch($_SESSION['selpage'])
 					{
-						case 1: header("Location: pass-page.php");
+						case 1: header("Location: ../html/pass-page.php");
 						break;
-						case 2: header("Location: pass-paget.php");
+						case 2: header("Location: ../html/pass-paget.php");
 						break;
-						default: header("Location: home.php");
+						default: header("Location: ../index.php");
 					}
 				}
 			}
