@@ -18,18 +18,18 @@ include 'vote.php';
 		  head();
 	?>
 	<!-- some imports-->
-	<link rel="icon" type="image/png" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="css/material.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="js/jQuery.js"></script>
-	<script type="text/javascript" src="js/material.min.js"></script>
+	<link rel="icon" type="image/png" href="../icon.png">
+	<link rel="stylesheet" type="text/css" href="../css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="../js/jQuery.js"></script>
+	<script type="text/javascript" src="../js/material.min.js"></script>
 
 	<title>Make a Vote!</title>
 	<head>
 			<!-- Uses a transparent header that draws on top of the layout's background -->
 			<style>
 			.demo-layout-transparent {
-			background: url('test.png') center / cover;
+			background: url('../drawable/test.png') center / cover;
 			}
 			.demo-layout-transparent .mdl-layout__header,
 			.demo-layout-transparent .mdl-layout__drawer-button {
@@ -116,12 +116,12 @@ include 'vote.php';
 		</style>
 	    <!-- cards for the candidates -->
 		<body>
-		<form method="post" id="myForm" name="myForm" action="potatoconf.php">
+		<form method="post" id="myForm" name="myForm" action="../php/potatoconf.php">
 		<div id="parentu_main" style="display: flex; justify-content: space-between;">
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/0.jpg')center / cover;">
+			url('../picture/0.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][0];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -139,7 +139,7 @@ include 'vote.php';
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/1.jpg')center / cover;">
+			url('../picture/1.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][1];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -157,7 +157,7 @@ include 'vote.php';
 		<div id="childu_main" style="margin-right: auto;">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/2.jpg')center / cover;">
+			url('../picture/2.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][2];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -172,7 +172,7 @@ include 'vote.php';
 			</div>
 		<div id="dbtn">
 		<button type="button" class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="tab2();">
-			<img src="icons/forward.png"></img>
+			<img src="../icons/forward.png"></img>
 		</button>
 		</div>
 		</div>
@@ -184,7 +184,7 @@ include 'vote.php';
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/3.jpg')center / cover;">
+			url('../picture/3.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][3];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -202,7 +202,7 @@ include 'vote.php';
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/4.jpg')center / cover;">
+			url('../picture/4.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][4];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -220,7 +220,7 @@ include 'vote.php';
 		<div id="childu_main" style="margin-right: auto;">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp">
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url('picture/5.jpg')center / cover;">
+			url('../picture/5.jpg')center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][5];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -235,7 +235,7 @@ include 'vote.php';
 			</div>
 		<div id="dbtn">
 		<button class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" type="submit" id="subbut" name="subbut">
-			<img src="icons/forward.png"></img>
+			<img src="../icons/forward.png"></img>
 		</button>
 		</div>
 		</div>

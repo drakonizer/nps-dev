@@ -7,12 +7,12 @@
 	<body font="Courier New">
 		The 133t minds behind this piece of software!
 		<p>drakonizer</p>
-		<img src="droid.png">
+		<img src="../drawable/droid.png">
 		<br></br>
 		<p>Icyphox</p>
-		<img src="phoxface.png">
+		<img src="../drawable/phoxface.png">
 		<br></br>
 		<p>HyperPotato</p>
-		<img src="potato.jpeg">
+		<img src="../drawable/potato.jpeg">
 	</body>
 </html>

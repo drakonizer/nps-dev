@@ -1,24 +1,25 @@
 <?php 
-$page=4;
-include 'login.php';
-$_SESSION['error']="Enter your password...";
+$page=1;
+include '../php/login.php';
+$_SESSION['error']="Enter your password";
+
  ?>
 <!DOCTYPE html>
 
 <html>
 	<!-- some imports-->
-	<link rel="icon" type="image/png" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="css/material.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="js/jQuery.js"></script>
-	<script type="text/javascript" src="js/material.min.js"></script>
+	<link rel="icon" type="image/png" href="../icon.png">
+	<link rel="stylesheet" type="text/css" href="../css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="../js/jQuery.js"></script>
+	<script type="text/javascript" src="../js/material.min.js"></script>
 
 	<title>Enter Password</title>
 	<head>
 			<!-- Uses a transparent header that draws on top of the layout's background -->
 			<style>
 			.demo-layout-transparent {
-			background: url('test.png') center / cover;
+			background: url('../drawable/test.png') center / cover;
 			}
 			.demo-layout-transparent .mdl-layout__header,
 			.demo-layout-transparent .mdl-layout__drawer-button {
@@ -59,7 +60,7 @@ $_SESSION['error']="Enter your password...";
 			  </div>
 			<div id="passform" style="margin-top: 150px;">
 			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="submit" type="submit" id="submit">
-				<img style="width: 30px; height: 30px;" src="icons/send.png"></i>
+				<img style="width: 30px; height: 30px;" src="../icons/send.png"></i>
 			</button>
 			</div>
 			</form>

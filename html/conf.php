@@ -6,8 +6,8 @@ $_SESSION['sdname']="";
 $_SESSION['sddetails']="";
 $_SESSION['name']=array("","","","","","");
 $_SESSION['details']=array("","","","","","");
-include 'thepotatoman.php';
-include 'vote.php';
+include '../php/thepotatoman.php';
+include '../php/vote.php';
 ?>
 <!DOCTYPE html>
 
@@ -17,17 +17,17 @@ include 'vote.php';
 	?>
 	<!-- some imports-->
 	<link rel="icon" type="image/png" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="css/material.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="js/jQuery.js"></script>
-	<script type="text/javascript" src="js/material.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" src="../js/jQuery.js"></script>
+	<script type="text/javascript" src="../js/material.min.js"></script>
 
 	<title>Make a Vote!</title>
 	<head>
 			<!-- Uses a transparent header that draws on top of the layout's background -->
 			<style>
 			.demo-layout-transparent {
-			background: url('test.png') center / cover;
+			background: url('../drawable/test.png') center / cover;
 			}
 			.demo-layout-transparent .mdl-layout__header,
 			.demo-layout-transparent .mdl-layout__drawer-button {
@@ -119,7 +119,7 @@ include 'vote.php';
 		<div id="childu_main">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url(<?php echo "picture/".$_SESSION['d'].".jpg"; ?>)center / cover;">
+			url(<?php echo "../picture/".$_SESSION['d'].".jpg"; ?>)center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][$_SESSION['d']];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -130,7 +130,7 @@ include 'vote.php';
 		<div id="childu_main" style="margin-right: auto;">
 			<div class="demo-card-square mdl-card mdl-shadow--8dp" >
 			  <div class="mdl-card__title mdl-card--expand" style="background:
-			url(<?php echo "picture/".$_SESSION['h'].".jpg"; ?>)center / cover;">
+			url(<?php echo "../picture/".$_SESSION['h'].".jpg"; ?>)center / cover;">
 				<h2 class="mdl-card__title-text"><?php echo $_SESSION['name'][$_SESSION['h']];?></h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
@@ -139,7 +139,7 @@ include 'vote.php';
 			  </div>
 			</div>
 		<div id="dbtn">
-		<form method="post" id="confirm" name="confirm" action="voteadd.php">
+		<form method="post" id="confirm" name="confirm" action="../php/voteadd.php">
 		<button type="button" class="mdl-shadow--16dp mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="showSnax();">
 		  <img src="icons/done_all.png"></img>
 		</button>

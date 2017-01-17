@@ -42,6 +42,6 @@ for($j=3;$j<6;$j++)
 		}
 }
 
-header("Location: conf.php");
+header("Location: ../html/conf.php");
 
 ?>

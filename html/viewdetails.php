@@ -3,20 +3,20 @@ session_start();
 $total = array_fill(0,6,0);
 $name = array_fill(0,6,'');
 $class = array_fill(0,6,array_fill(0,12,0));
-include 'thepotatoman.php';
-include 'results.php'; 
+include '../php/thepotatoman.php';
+include '../php/results.php'; 
 ?>
 
 <!DOCTYPE html>
 
 <html>
 	<!-- some imports-->
-	<link rel="icon" type="image/png" href="icon.png">
-	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="icon" type="image/png" href="../icon.png">
+	<link rel="stylesheet" type="text/css" href="../css/material.min.css">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="css/material.min.js"></script>
+	<script type="text/javascript" src="../css/material.min.js"></script>
 	<!--link rel="stylesheet" href="css/material.min.css"-->
 	<!--script src="css/material.js"></script-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -26,7 +26,7 @@ include 'results.php';
 			<!-- Uses a transparent header that draws on top of the layout's background -->
 			<style>
 			.demo-layout-transparent {
-			background: url('test.png') center / cover;
+			background: url('../drawable/test.png') center / cover;
 			}
 			.demo-layout-transparent .mdl-layout__header,
 			.demo-layout-transparent .mdl-layout__drawer-button {
@@ -56,6 +56,7 @@ include 'results.php';
 			<main class="mdl-layout__content">
 			</main>
 			</div>
+		</head>
 		<body>
 		<div id="passform" style="margin-top: 164px;">
 			<table class="mdl-data-table mdl-shadow--16dp">
@@ -180,3 +181,4 @@ include 'results.php';
 			</table>
 		</div>
 		</body>
+	</html>

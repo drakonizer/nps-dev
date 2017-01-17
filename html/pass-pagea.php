@@ -1,8 +1,7 @@
 <?php 
-$page=1;
-include 'login.php';
-$_SESSION['error']="Enter your password";
-
+$page=3;
+include '../php/login.php';
+$_SESSION['error']="Enter your password...";
  ?>
 <!DOCTYPE html>
 
@@ -60,7 +59,7 @@ $_SESSION['error']="Enter your password";
 			  </div>
 			<div id="passform" style="margin-top: 150px;">
 			<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="submit" type="submit" id="submit">
-				<img style="width: 30px; height: 30px;" src="icons/send.png"></i>
+				<img style="width: 30px; height: 30px;" src="../icons/send.png"></i>
 			</button>
 			</div>
 			</form>
