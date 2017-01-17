@@ -10,17 +10,17 @@ $_SESSION['loggedin']=0;
 <html>
 	<!-- some imports-->
 
-	<link rel="stylesheet" type="text/css" href="../css/material.min.css">
-	<link rel="stylesheet" type="text/css" href="../style.css">
-	<script type="text/javascript" src="../js/jQuery.js"></script>
-	<script type="text/javascript" src="../js/material.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="js/material.min.js"></script>
 	<title>Voting System</title>
 	<head>
-			<link rel="shortcut icon" href="../icon.png">
+			<link rel="shortcut icon" href="icon.png">
 			<!-- Uses a transparent header that draws on top of the layout's background -->
 			<style>
 			.demo-layout-transparent {
-			background: url('../drawable/test.png') center / cover;
+			background: url('drawable/test.png') center / cover;
 			}
 			.demo-layout-transparent .mdl-layout__header,
 			.demo-layout-transparent .mdl-layout__drawer-button {
@@ -35,17 +35,17 @@ $_SESSION['loggedin']=0;
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
 					
-					<span onclick="location.href='kappa.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
+					<span onclick="location.href='html/kappa.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
 					
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
 					<!-- Navigation -->
 					<nav class="mdl-navigation">
-						<a class="mdl-navigation__link" href="pass-page.php">Student Vote</a>
-						<a class="mdl-navigation__link" href="pass-paget.php">Teacher Vote</a>
-						<a class="mdl-navigation__link" href="pass-pagea.php">Add Details</a>
-						<a class="mdl-navigation__link" href="pass-pagev.php">View Results</a>
+						<a class="mdl-navigation__link" href="html/pass-page.php">Student Vote</a>
+						<a class="mdl-navigation__link" href="html/pass-paget.php">Teacher Vote</a>
+						<a class="mdl-navigation__link" href="html/pass-pagea.php">Add Details</a>
+						<a class="mdl-navigation__link" href="html/pass-pagev.php">View Results</a>
 					</nav>
 				</div>
 			</header>
@@ -59,7 +59,7 @@ $_SESSION['loggedin']=0;
 		.demo-card-image.mdl-card {
 		  width: auto;
 		  height: auto;
-		  /* background: url('../drawable/c1.jpg') center / cover; */
+		  /* background: url('drawable/c1.jpg') center / cover; */
 		}
 		.demo-card-image >.mdl-card__actions {
 		  height: 52px;
@@ -76,18 +76,18 @@ $_SESSION['loggedin']=0;
 	   
 		<body>
 		<div id="parentu" style="padding-top: 150px;">
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-paget.php'" style="background: url('../drawable/c1.jpg') center / contain; background-repeat:no-repeat;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='html/pass-paget.php'" style="background: url('../drawable/c1.jpg') center / contain; background-repeat:no-repeat;" id="select">
 		  <div href="pass-page.php" class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-page.php'" style="background: url('../drawable/c2.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='html/pass-page.php'" style="background: url('../drawable/c2.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
 		</div>
 		<div id="parentu" style="padding-top: 20px; margin-bottom: 50px">		
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-pagea.php'" style="background: url('../drawable/c3.jpg') center / contain; background-repeat:no-repeat;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='html/pass-pagea.php'" style="background: url('../drawable/c3.jpg') center / contain; background-repeat:no-repeat;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 		</div>
-		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='pass-pagev.php'" style="background: url('../drawable/c4.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
+		<div class="demo-card-image mdl-card mdl-shadow--16dp content mdl-js-ripple-effect" onclick="location.href='html/pass-pagev.php'" style="background: url('../drawable/c4.jpg') center / contain; background-repeat:no-repeat; margin-left: 20px; margin-right: auto;" id="select">
 		  <div class="mdl-card__title mdl-card--expand mdl-ripple"></div>
 	</body>
 </html>

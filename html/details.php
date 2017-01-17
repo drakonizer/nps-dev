@@ -1,6 +1,6 @@
 <?php
 $_SESSION['loggedin']=1;
-include 'thepotatoman.php'; ?>
+include '../php/thepotatoman.php'; ?>
 <!DOCTYPE html>
 <html>
 	<!-- some imports-->
@@ -29,7 +29,7 @@ include 'thepotatoman.php'; ?>
 			<header class="mdl-layout__header mdl-layout__header--transparent mdl-shadow--16dp" >
 				<div class="mdl-layout__header-row">
 					<!-- Title -->
-					<span onclick="location.href='home.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
+					<span onclick="location.href='../index.php'" style="cursor:pointer;" class="mdl-layout-title">NPS-HSR | Voting System | 2016-2017</span>
 					<!--NOTE: We will use a different image and change the color of the text in the header accordingly -->
 					<!-- Add spacer, to align navigation to the right -->
 					<div class="mdl-layout-spacer"></div>
